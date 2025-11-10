@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: bisque;">
+    <h1>Haga su reserva</h1>
+    <form action="procesareserva.php"
+          method="GET">
+    <fieldset>
+      <legend>Datos Personales</legend>
+        Nombre 
+        <input type="text" 
+               name="Nombre" 
+               id="name" 
+               maxlength="100" 
+               required
+               autofocus> <br><br>
+        Apellidos 
+        <input type="text" 
+               name="Apellidos" 
+               id="surname" 
+               maxlength="100" 
+               required> <br><br>
+        DNI   
+        <input type="text" 
+               name="DNI" 
+               id="dni" 
+               maxlength="10" 
+               placeholder="DNI con letra."
+               required> <br><br>
+    </fieldset>
+    <fieldset> 
+      <legend>Datos de la estancia</legend>          
+        Habitación que desea <br>
+        Simple <input type="radio" 
+                      name="Habitacion" 
+                      id="room">
+        Doble  <input type="radio" 
+                      name="Habitacion" 
+                      id="room">
+        Suite  <input type="radio" 
+                      name="Habitacion"    
+                      id="room"> <br><br>
+        Número de personas <select name="Personas" id="people">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            </select> <br><br>
+        Mascotas <input type="checkbox" 
+                        name="Mascotas" 
+                        id="pets"> <br><br>    
+        Fecha de entrada <input type="date" 
+                                name="Fecha" 
+                                id="date"> <br><br>
+        Hora de llegada <input type="time" 
+                               name="Hora" 
+                               id="time">                        
+    </fieldset>
+    
+    <input type="submit" value="Aceptar" id="enter" name="Aceptar">
+    <input type="reset" value="Reiniciar" id="reset" name="Reiniciar">
+
+    </form>
+
+    <br><br>
+
+    <a href="../index.html"><button>Página principal</button></a>
+</body>
+</html>
